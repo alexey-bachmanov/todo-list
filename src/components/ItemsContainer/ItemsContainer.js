@@ -49,7 +49,11 @@ function ItemsContainer(props) {
     console.log("filter updated!", filter);
     // BUG BUG BUG
     // enabling this line of code stops the filter from updating?
+    // is something messing with state?
     // setFilteredList(sortAndFilter(props.list, filter));
+
+    // making this component stateful breaks the completion functionality
+    // and I have no idea why
   };
   return (
     <div>
