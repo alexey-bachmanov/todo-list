@@ -15,7 +15,7 @@ function SortingOptions(props) {
     props.liftState(2);
   };
   return (
-    <div className="card">
+    <div className="card sorting-options">
       <img
         src={stars0}
         height="60"

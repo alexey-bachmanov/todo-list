@@ -11,6 +11,7 @@ color-white:  #F2F5FF
   border-radius: 18px;
   background-color: #666a86;
   padding: 8px;
+  margin: 8px auto;
 }
 
 .button {

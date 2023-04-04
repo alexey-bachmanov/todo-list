@@ -11,7 +11,6 @@ function ToDoItem(props) {
   const completeBtnHandler = function () {
     // pass the object up for deletion
     props.liftState(props.listItem);
-    console.log("item completed");
   };
 
   return (
