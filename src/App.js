@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
+import logoImg from "./images/todo-logo.png";
 import NewItemForm from "./components/NewItem/NewItemForm";
 import ItemsContainer from "./components/ItemsContainer/ItemsContainer";
 import "./App.css";
@@ -42,10 +43,11 @@ function App() {
       ...oldList.slice(0, index),
       ...oldList.slice(index + 1),
     ]);
+    console.log("item deleted");
   };
   return (
     <div className="App">
-      App
+      <img src={logoImg} height="60" />
       <NewItemForm liftState={formSubmitHandler} />
       <ItemsContainer list={toDoList} liftState={completeEventHandler} />
     </div>
